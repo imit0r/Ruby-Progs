@@ -1,6 +1,6 @@
 #puts "hello world"#(returns a string with a nil value as a new line)
 #p 'hello world'#(returns the string 'as is')
-#print "hello world"#(returns the string without adding a new line)
+#print "hello world"#(returns the string and nil value without adding a new line)
 
 #greeting = "hello imit0r" #(printing statements using variables)
 #puts greeting
