@@ -10,15 +10,12 @@ users = [
 
 def auth_user(username, password, userlist)
     password = gets.chomp
-    users.each do |user|
-        if user[:username] == username && user[:password] == password
-            puts user
-            break
-        else
-            puts "Uh oh..incorrect.."
-            break
+    userlist.each do |user_record|
+        if user_record[:username] == username && user_record[:password] == password
+            return user_record
         end
     end
+    "Uh oh..incorrect.."
 end
 
 puts "Welcome to the Authenticator"
@@ -41,4 +38,4 @@ while attempts < 4
     attempts += 1
 
 end
-
+puts "You've exceeded your tries"
